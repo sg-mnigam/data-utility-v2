@@ -5,12 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './shared/service/api.service';
-import { LoginComponent } from './okta-shared-resource/login/login.component';
+// import { LoginComponent } from './okta-module/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    // LoginComponent
   ],
   imports: [
     BrowserModule,

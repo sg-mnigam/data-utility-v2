@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://restapi.adequateshop.com'
+  API_URL: 'http://restapi.adequateshop.com',
+  OKTA_BASE_URL: 'https://safeguard-dev.oktapreview.com/oauth2/aus2o902flb3fHbRi1d7',
+  OKTA_CLIENT_ID :'0oa6961qs4MgKAhx01d7',
+  OKTA_SCOPE :['openid', 'profile', 'email'],
+
 };
 
 /*

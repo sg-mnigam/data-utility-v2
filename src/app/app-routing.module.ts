@@ -3,11 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'login', pathMatch: 'full'
+    path: '', redirectTo: 'okta', pathMatch: 'full'
   },
   {
-    path: 'login', loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
+    path: 'okta', loadChildren: () => import('./okta-module/okta.module').then(m => m.OktaModule)
   },
+  // {
+  //   path: 'login', loadChildren: () => import('./user/user.module').then((m) => m.UserModule)
+  // },
   {
     path: 'main', loadChildren: () => import('./main/main.module').then((m) => m.MainModule)
   }
